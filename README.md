@@ -37,7 +37,7 @@ $ ssh [ssh arguments]
 
 # License
 
-[MIT][mit] © [{{USER}}][author] et [al][contributors]
+[MIT][mit] © [rominf][author] et [al][contributors]
 
 
 [mit]:            http://opensource.org/licenses/MIT

@@ -9,7 +9,7 @@
 
 <br/>
 
-Automatically generates OpenSSH config file (`~/.ssh/config`) from `*.config` files, located in `~/.ssh/config.d/` before every `ssh` execution.
+Automatically generates OpenSSH config file (`~/.ssh/config`) from `*.config` files, located in `~/.ssh/config.d/` (nested directories inside are supported!) before every `ssh` execution.
 
 Based on idea described described described described described described described described described in https://serverfault.com/questions/375525/can-you-have-more-than-one-ssh-config-file
 
@@ -24,7 +24,7 @@ $ omf install ssh-config.d
 
 First of all, split your OpenSSH config file:
 ```
-~/.ssh/config -> ~/.ssh/config.d/*.config
+~/.ssh/config -> ~/.ssh/config.d/**.config
 ```
 
 Then use `ssh` as usual:

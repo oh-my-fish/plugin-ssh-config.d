@@ -9,7 +9,7 @@
 
 <br/>
 
-Automatically generates ssh config file (`~/.ssh/config`) from `*.config` files, located in `~/.ssh/config.d/` before every ssh execution.
+Automatically generates OpenSSH config file (`~/.ssh/config`) from `*.config` files, located in `~/.ssh/config.d/` before every `ssh` execution.
 
 Based on idea described described described described described described described described described in https://serverfault.com/questions/375525/can-you-have-more-than-one-ssh-config-file
 
@@ -22,8 +22,17 @@ $ omf install ssh-config.d
 
 ## Usage
 
+Generate OpenSSH config file:
+
 ```fish
 $ ssh-config.d
+```
+
+
+Generate OpenSSH config file and launch ssh:
+
+```fish
+$ ssh [ssh arguments]
 ```
 
 # License

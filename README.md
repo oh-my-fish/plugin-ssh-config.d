@@ -22,17 +22,21 @@ $ omf install ssh-config.d
 
 ## Usage
 
-Generate OpenSSH config file:
-
-```fish
-$ ssh-config.d
+First of all, split your OpenSSH config file:
+```
+~/.ssh/config -> ~/.ssh/config.d/*.config
 ```
 
-
-Generate OpenSSH config file and launch ssh:
+Then use `ssh` as usual:
 
 ```fish
 $ ssh [ssh arguments]
+```
+
+To manually generate OpenSSH config file run `ssh-config.d`:
+
+```fish
+$ ssh-config.d
 ```
 
 # License

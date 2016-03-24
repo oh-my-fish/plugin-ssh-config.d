@@ -22,18 +22,14 @@ $ omf install ssh-config.d
 
 ## Usage
 
-First of all, split your OpenSSH config file:
+Just use `ssh` as usual, that's it. `ssh-config.d` will automatically create required directory and move existing config to it on the first `ssh` invocation after plugin installation.
+
+Of course, you can create this directory yourself and manually split your OpenSSH config file:
 ```
 ~/.ssh/config -> ~/.ssh/config.d/**.config
 ```
 
-Then use `ssh` as usual:
-
-```fish
-$ ssh [ssh arguments]
-```
-
-To manually generate OpenSSH config file run `ssh-config.d`:
+In case you've changed content of `~/.ssh/config.d/` directory and want to get updated `~/.ssh/config` file without executing `ssh` command, simply run `ssh-config.d`:
 
 ```fish
 $ ssh-config.d

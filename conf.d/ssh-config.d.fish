@@ -1,4 +1,4 @@
-function init -a path --on-event init_ssh-config.d
+function init -a path --on-event ssh-config.d
   config ssh-config.d --set ssh_config ~/.ssh/config
   config ssh-config.d --set ssh_config_dir ~/.ssh/config.d/
   config ssh-config.d --set warn \
@@ -10,4 +10,3 @@ function init -a path --on-event init_ssh-config.d
 
 "
 end
-
